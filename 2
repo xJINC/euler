@@ -1,0 +1,15 @@
+#Qn 2
+
+def Fibonacci():
+    total = 0
+    m = 0
+    n = 1
+    while m + n < 4000000:
+        i = m + n
+        if i % 2 == 0:
+            total = total + i
+        m = n
+        n = i
+    print(total)
+
+Fibonacci()
